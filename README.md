@@ -25,9 +25,7 @@ npm run dev
 5. LAB 2와 LAB 4에서 Timer를 관리하는 방식의 차이는?
 
 
-1. Project Information
-React의 useEffect와 useRef를 연습하는 프로젝트입니다.
-OSS 12주차 Starter Project에서 시작했고, 실습은 총 4개입니다.
+
 2. Installation
 터미널에서 npm install 실행한 뒤 npm run dev로 실행
 3. Source Code Exploration
@@ -49,7 +47,7 @@ App.jsx에서 제목을 React Hooks 실습실로 바꿈, App.css에서 페이지
 새롭게 배운 내용
 -useEffect에서 정리를 하지 않으면 다른 화면으로 넘어가도 그 동작이 계속 작동하게 되어 더 큰 오류의 원인이 되거나 메모리에 부담을 줄 수 있다는 것을 알게 되었습니다.
 - useEffect는 화면 변경 처리 후 정리를 실행할 수 있고, useRef는 렌더링을 하지 않는, 단지 값을 담을 수 있는 상자라는 것을 알게 되었습니다.
-- 여러 파일을 한 번에 수정해도 원하는 파일만 스테이징해서 커밋을  각각할 수 있다는 것을 배웠습니다.
+- 여러 파일을 한 번에 수정해도 원하는 파일만 스테이징해서 커밋을 각각할 수 있다는 것을 배웠습니다.
 어려웠던 점과 해결 방법
 버튼으로 타이머를 직접 관리하는 부분이 어려웠습니다. useRef에 타이머 값 변수를 저장하고, Stop을 누르면 그 변수를 사용해 타이머를 멈추는 방식으로 해결했습니다. 
 AI 활용 내용 및 느낀 점
