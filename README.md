@@ -23,3 +23,24 @@ npm run dev
 3. Cleanup은 언제 실행되는가? 개발 환경 StrictMode 영향은?
 4. `useState`와 `useRef`의 값 변경 시 렌더링 차이는?
 5. LAB 2와 LAB 4에서 Timer를 관리하는 방식의 차이는?
+
+
+1. Project Information
+React의 useEffect와 useRef를 연습하는 프로젝트입니다.
+OSS 12주차 Starter Project에서 시작했고, 실습은 총 4개입니다.
+2. Installation
+터미널에서 npm install 실행한 뒤 npm run dev로 실행
+3. Source Code Exploration
+ useEffect의 return () => clearInterval(id)는 타이머를 정리한다(Cleanup).
+ useRef의 inputRef.current.focus()는 입력창을 강조한다.
+4. Lab Implementation
+Lab 1은 숫자가 자동으로 올라가고, Lab 2는 Start·Stop·Reset으로 더욱 정교한 조작이 가능하다.
+Lab 3에서 Focus를 누르면 입력창이 강조된다. Clear를 누르면 입력한 글자가 지워지고, 다시 입력할 수 있다.
+Lab 4에서 Start를 누르면 타이머가 실행된다. 실행 중에는 Start 버튼이 비활성화되고, Stop을 누르면 Start를 다시 누를 수 있다.
+5. Lab Comparison
+ 1. []를 쓰면 Effect는 페이지가 로드 될 때 실행된다. 
+ 2. Cleanup(return)은 Effect가 다시 실행되기 전에 실행된다.
+ 3. Lab 2는 타이머가 실행되면 useEffect가 타이머를 시작하도록 하고, Lab 4는 start, stop 버튼에서 타이머 실행을 직접 관리한다. 
+ 4. 타이머 ID는 정지에 쓰고, count와 running은 화면 표시에 씁니다.
+6. Customizing
+App.jsx에서 제목을 React Hooks 실습실로 바꿈, App.css에서 페이지와 선택된 탭의 배경색을 바꿈.
