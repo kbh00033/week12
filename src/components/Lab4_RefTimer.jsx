@@ -39,7 +39,7 @@ export default function Lab4RefTimer() {
         <button className="secondary" onClick={stop} disabled={!running}>Stop</button>
         <button className="secondary" onClick={reset}>Reset</button>
       </div>
-      <p className="hint">Timer ID와 화면 표시용 상태의 차이를 설명해 보세요.</p>
+      
     </div>
   );
 }
